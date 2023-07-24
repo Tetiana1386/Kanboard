@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API Tests">
+    <test name="API regression tests">
+        <classes>
+            <class name="api.tests.users.CreateUserPositiveApiTests"/>
+            <class name="api.tests.users.CreateUserNegativeApiTests"/>
+            <class name="api.tests.users.DeleteUserNegativeApiTests"/>
+            <class name="api.tests.users.DeleteUserPositiveApiTests"/>
+            <class name="api.tests.users.UpdateUserApiTests"/>
+            <class name="api.tests.users.GetUserApiTests"/>
+
+            <class name="api.tests.projects.CreateProjectNegativeApiTests"/>
+            <class name="api.tests.projects.CreateProjectPositiveApiTests"/>
+            <class name="api.tests.projects.AddProjectUserApiTests"/>
+            <class name="api.tests.projects.GetProjectApiTests"/>
+            <class name="api.tests.projects.DeleteProjectNegativeApiTests"/>
+            <class name="api.tests.projects.DeleteProjectPositiveApiTests"/>
+
+            <class name="api.tests.tasks.CreateTaskNegativeApiTests"/>
+            <class name="api.tests.tasks.CreateTaskPositiveApiTests"/>
+            <class name="api.tests.tasks.GetTaskApiTests"/>
+            <class name="api.tests.tasks.CloseTaskApiTests"/>
+            <class name="api.tests.tasks.DeleteTaskNegativeApiTests"/>
+            <class name="api.tests.tasks.DeleteTaskPositiveApiTests"/>
+            <class name="api.tests.tasks.MoveTaskPositionApiTests"/>
+
+            <class name="api.tests.board.BoardInfoPositiveApiTests"/>
+        </classes>
+    </test>
+</suite>

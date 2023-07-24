@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UI Tests">
+    <test name="UI regression tests">
+        <classes>
+            <class name="ui.tests.BaseUiTest"/>
+            <class name="ui.tests.users.LoginUiTests"/>
+
+            <class name="ui.tests.projects.CreateProjectNegativeUiTests"/>
+            <class name="ui.tests.projects.CreateProjectPositiveUiTests"/>
+            <class name="ui.tests.projects.CancelCreateProjectUiTests"/>
+            <class name="ui.tests.projects.CancelDeleteProjectUiTests"/>
+            <class name="ui.tests.projects.DeleteProjectPositiveUiTests"/>
+
+            <class name="ui.tests.tasks.CreateTaskNegativeUITests"/>
+            <class name="ui.tests.tasks.CreateTaskPositiveUiTests"/>
+            <class name="ui.tests.tasks.TaskUiTests"/>
+            <class name="ui.tests.tasks.DragAndDropUITests"/>
+        </classes>
+    </test>
+</suite>

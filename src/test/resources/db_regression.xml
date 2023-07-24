@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DB Tests">
+    <test name="DB regression tests">
+        <classes>
+            <class name="db.tests.UserDBTests"/>
+            <class name="db.tests.ProjectDBTests"/>
+        </classes>
+    </test>
+</suite>

@@ -22,24 +22,24 @@ Run your app with Compose:
 ---
 
 
--[x] `mvn clean test -Papi_regression` - to run all API tests;
+- [x] `mvn clean test -Papi_regression` - to run all API tests;
 
 
--[x] `mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=false` - to run all Ui tests in the Chrome browser;
+- [x] `mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=false` - to run all Ui tests in the Chrome browser;
 
 
--[x] `mvn clean test -Pui_regression -Dbrowser=firefox -Dheadless=false` - to run all Ui tests in the Firefox browser;
+- [x] `mvn clean test -Pui_regression -Dbrowser=firefox -Dheadless=false` - to run all Ui tests in the Firefox browser;
 
 
--[x] `mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=true` - to run all Ui tests in the headless mode Chrome browser;
+- [x] `mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=true` - to run all Ui tests in the headless mode Chrome browser;
 
 
 ## Commands for receiving Allure report:
 ---
 
 
--[x] `allure generate target/allure-results`;
+- [x] `allure generate target/allure-results`;
 
 
--[x] `allure serve target/allure-results`.
+- [x] `allure serve target/allure-results`.
 

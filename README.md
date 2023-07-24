@@ -2,7 +2,7 @@
 ---
 <div align="center">
   <a href="https://github.com/Tetiana1386/Kanboard">
-    <img src="src/images/image_1.png" alt="Kanboard" width="230" height="100">
+    <img src="src/images/image_1.png" alt="Kanboard" width="" height="">
   </a>
 </div>
 

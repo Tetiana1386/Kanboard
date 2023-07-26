@@ -2,7 +2,7 @@
 ---
 <div align="center">
   <a href="https://github.com/Tetiana1386/Kanboard">
-    <img src="src/images/image_1.png" alt="Kanboard" width="" height="">
+    <img src="src/images/icons/image_1.png" alt="Kanboard" width="" height="">
   </a>
 </div>
 
@@ -10,14 +10,23 @@
 ---
 
 <code><img src="src/images/icons/java.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/maven.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/testng.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/selenide.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/rest-assured.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/Allure.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/Lombok.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/mariadb.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/docker.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/jenkins.png" alt="html5" height='50px' width='75'/></code>
 
 ## Getting Started

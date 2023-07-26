@@ -8,7 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import java.util.List;
+
 import static api.enums.UserRoles.ADMIN;
 import static utils.MyCustomFaker.getRandomNumber;
 
@@ -31,7 +33,7 @@ public class ProjectDBTests {
     public void createProjectDB() {
         ProjectDBController.insertProjectDB(PROJECT_NAME, userId);
         List<ProjectDB> projects = ProjectDBController.getAllProjectsDB();
-        Assert.assertTrue(projects.size()>0);
+        Assert.assertTrue(projects.size() > 0);
     }
 
     @AfterMethod(alwaysRun = true)

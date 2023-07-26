@@ -9,12 +9,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import java.util.List;
+
 import static utils.MyCustomFaker.getRandomNumber;
 
 public class GetProjectApiTests {
     ProjectApiSteps projectApiSteps = new ProjectApiSteps();
-    private static final String NAME_PROJECT = "Project" + + getRandomNumber();
+    private static final String NAME_PROJECT = "Project" + +getRandomNumber();
     private String projectId;
 
     @BeforeMethod
@@ -29,6 +31,7 @@ public class GetProjectApiTests {
         BodyResult<ProjectProperties> projectProperties = projectApiSteps.getProjectById(Integer.valueOf(projectId + projectId));
         Assert.assertNull(projectProperties.getResult(), "Found a project with some data");
     }
+
     @Test
     @Description("Checking positive case of getting project by id")
     public void getProjectByIdPositiveApiTest() {

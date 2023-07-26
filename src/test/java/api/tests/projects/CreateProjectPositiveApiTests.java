@@ -12,6 +12,7 @@ public class CreateProjectPositiveApiTests {
     ProjectApiSteps projectApiSteps = new ProjectApiSteps();
     private static final String PROJECT_NAME = "Project" + getRandomNumber();
     private String projectId;
+
     @Test
     @Description("Checking positive case of creating project")
     public void createProjectWithValidDataApiTest() {

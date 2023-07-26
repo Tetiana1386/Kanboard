@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import static utils.MyCustomFaker.getRandomNumber;
 
 public class DeleteUserPositiveApiTests {

@@ -16,7 +16,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_OK;
 import static utils.EnvProperties.API_TOKEN;
 import static utils.EnvProperties.API_USERNAME;
 
-public class ProjectApiSteps extends BaseApiSteps{
+public class ProjectApiSteps extends BaseApiSteps {
 
     public String createNewProject(String projectName) {
         CreateProject args = CreateProject.builder()
@@ -39,7 +39,8 @@ public class ProjectApiSteps extends BaseApiSteps{
                 .build();
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
         response.then().statusCode(SC_OK);
-        return response.as(new TypeRef<BodyResult<ProjectProperties>>() {});
+        return response.as(new TypeRef<BodyResult<ProjectProperties>>() {
+        });
     }
 
     public BodyResult<ProjectProperties> getProjectByName(String projectName) {
@@ -49,7 +50,8 @@ public class ProjectApiSteps extends BaseApiSteps{
                 .build();
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
         response.then().statusCode(SC_OK);
-        return response.as(new TypeRef<BodyResult<ProjectProperties>>() {});
+        return response.as(new TypeRef<BodyResult<ProjectProperties>>() {
+        });
     }
 
     public BodyResult<List<ProjectProperties>> getAllProjects() {
@@ -58,10 +60,11 @@ public class ProjectApiSteps extends BaseApiSteps{
                 .build();
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
         response.then().statusCode(SC_OK);
-        return response.as(new TypeRef<BodyResult<List<ProjectProperties>>>() {});
+        return response.as(new TypeRef<BodyResult<List<ProjectProperties>>>() {
+        });
     }
 
-    public boolean addProjectUser(String projectId, String userId, String projectRole){
+    public boolean addProjectUser(String projectId, String userId, String projectRole) {
         BodyArgs bodyArgs = BodyArgs.builder()
                 .params(List.of(projectId, userId, projectRole))
                 .method(ADD_PROJECT_USER)

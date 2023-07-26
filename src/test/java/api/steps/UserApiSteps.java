@@ -15,7 +15,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_OK;
 import static utils.EnvProperties.API_TOKEN;
 import static utils.EnvProperties.API_USERNAME;
 
-public class UserApiSteps extends BaseApiSteps{
+public class UserApiSteps extends BaseApiSteps {
     public String createUser(String username, String pass) {
         CreateUser args = CreateUser.builder()
                 .username(username)
@@ -41,10 +41,11 @@ public class UserApiSteps extends BaseApiSteps{
                 .build();
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
         response.then().statusCode(SC_OK);
-        return response.as(new TypeRef<BodyResult<UserProperties>>() {});
+        return response.as(new TypeRef<BodyResult<UserProperties>>() {
+        });
     }
 
-    public boolean updateUserWithRequiredParameters(Integer userId, String role){
+    public boolean updateUserWithRequiredParameters(Integer userId, String role) {
         UpdateUser args = UpdateUser.builder()
                 .id(Integer.valueOf(userId))
                 .role(role)
@@ -58,7 +59,7 @@ public class UserApiSteps extends BaseApiSteps{
         return (boolean) response.as(BodyResult.class).getResult();
     }
 
-    public boolean updateUserWithoutRequiredParameters(String role){
+    public boolean updateUserWithoutRequiredParameters(String role) {
         UpdateUser args = UpdateUser.builder()
                 .role(role)
                 .build();

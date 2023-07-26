@@ -10,7 +10,7 @@ import static utils.MyCustomFaker.getRandomNumber;
 
 public class DeleteProjectPositiveApiTests {
     ProjectApiSteps projectApiSteps = new ProjectApiSteps();
-    private static final String NAME_PROJECT = "Project" + + getRandomNumber();
+    private static final String NAME_PROJECT = "Project" + +getRandomNumber();
     private String projectId;
 
     @BeforeMethod
@@ -19,6 +19,7 @@ public class DeleteProjectPositiveApiTests {
         projectId = projectApiSteps.createNewProject(NAME_PROJECT);
         System.out.println(projectId);
     }
+
     @Test
     @Description("Checking positive case of removing project")
     public void deleteProjectWithValidDataApiTest() {

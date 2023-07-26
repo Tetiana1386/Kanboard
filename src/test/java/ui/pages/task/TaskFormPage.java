@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import ui.elements.task.TaskFormElements;
 import ui.pages.BoardPage;
+
 import static com.codeborne.selenide.Condition.visible;
 
 public class TaskFormPage extends TaskFormElements {
@@ -37,11 +38,11 @@ public class TaskFormPage extends TaskFormElements {
     }
 
     public void selectCalendar(String month, String year, String day) {
-        while(selectMonth().shouldBe(visible).getText().contains(month)
+        while (selectMonth().shouldBe(visible).getText().contains(month)
                 && selectYear().shouldBe(visible).getText().contains(year)) {
             selectArrow().shouldBe(visible).click();
         }
-        selectElementFromList(selectDay(),day);
+        selectElementFromList(selectDay(), day);
         doneBtnCalendar().shouldBe(visible).click();
     }
 

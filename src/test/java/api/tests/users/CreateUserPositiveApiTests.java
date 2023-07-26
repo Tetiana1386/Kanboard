@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
 import static utils.MyCustomFaker.getRandomNumber;
 
 public class CreateUserPositiveApiTests {
@@ -12,6 +13,7 @@ public class CreateUserPositiveApiTests {
     private static final String USERNAME = "User" + getRandomNumber();
     private static final String PASSWORD = "password" + getRandomNumber();
     private String userId;
+
     @Test
     @Description("Checking positive case of creating user")
     public void createUserWithValidDataApiTest() {
@@ -23,7 +25,7 @@ public class CreateUserPositiveApiTests {
 
     @AfterMethod(alwaysRun = true)
     @Description("Cleaning up test data")
-    public void removeDataAfterTest(){
+    public void removeDataAfterTest() {
         userApiSteps.deleteUser(Integer.valueOf(userId));
 
     }

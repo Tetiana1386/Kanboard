@@ -19,6 +19,7 @@ public class DeleteProjectNegativeApiTests {
     public void prepareDataForTest() {
         projectId = projectApiSteps.createNewProject(NAME_PROJECT);
     }
+
     @Test
     @Description("Checking negative case of removing project")
     public void deleteProjectWithValidDataApiTest() {

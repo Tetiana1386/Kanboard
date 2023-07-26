@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import static utils.MyCustomFaker.getRandomNumber;
 
 public class MoveTaskPositionApiTests {
@@ -25,6 +26,7 @@ public class MoveTaskPositionApiTests {
         projectId = projectApiSteps.createNewProject(NAME_PROJECT);
         taskId = taskApiSteps.createNewTaskWithRequiredParameters(TITLE_TASK, Integer.valueOf(projectId));
     }
+
     @Test
     @Description("Checking that the task can be moved")
     public void moveTaskPositionApiTest() {
@@ -39,7 +41,8 @@ public class MoveTaskPositionApiTests {
     @AfterMethod(alwaysRun = true)
     @Description("Cleaning up test data")
     public void removeDataAfterTest() {
-        projectApiSteps.deleteProject(Integer.valueOf(projectId));
         taskApiSteps.deleteTask(Integer.valueOf(taskId));
+        projectApiSteps.deleteProject(Integer.valueOf(projectId));
+
     }
 }

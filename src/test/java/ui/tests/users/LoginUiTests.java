@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import ui.tests.BaseUiTest;
+
 import static utils.MyCustomFaker.getRandomNumber;
 
 public class LoginUiTests extends BaseUiTest {

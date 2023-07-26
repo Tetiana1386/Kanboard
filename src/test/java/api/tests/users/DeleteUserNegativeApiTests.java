@@ -30,7 +30,7 @@ public class DeleteUserNegativeApiTests {
 
     @AfterMethod(alwaysRun = true)
     @Description("Cleaning up test data")
-    public void removeDataAfterTest(){
+    public void removeDataAfterTest() {
         userApiSteps.deleteUser(Integer.valueOf(userId));
 
     }

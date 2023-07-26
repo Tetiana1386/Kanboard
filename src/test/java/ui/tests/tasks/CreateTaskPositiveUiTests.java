@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ui.tests.BaseUiTest;
+
 import static api.enums.UserRoles.ADMIN;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.visible;
@@ -71,8 +72,8 @@ public class CreateTaskPositiveUiTests extends BaseUiTest {
         taskFormPage
                 .createTaskWithSomeParams(taskTitle, "Green",
                         "Unassigned", "Backlog", "1",
-                        "July", "2023","25",
-                        "August", "2023","10")
+                        "July", "2023", "25",
+                        "August", "2023", "10")
                 .addedTask(taskTitle).shouldBe(visible)
                 .shouldHave(exactText(taskTitle));
 

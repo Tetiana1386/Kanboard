@@ -13,7 +13,7 @@ import static org.apache.hc.core5.http.HttpStatus.SC_OK;
 import static utils.EnvProperties.API_TOKEN;
 import static utils.EnvProperties.API_USERNAME;
 
-public class TaskApiSteps extends BaseApiSteps{
+public class TaskApiSteps extends BaseApiSteps {
     public String createNewTaskWithRequiredParameters(String titleTask, Integer projectId) {
         CreateTask args = CreateTask.builder()
                 .title(titleTask)
@@ -80,7 +80,8 @@ public class TaskApiSteps extends BaseApiSteps{
                 .build();
 
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
-        return response.as(new TypeRef<BodyResult<TaskProperties>>() {});
+        return response.as(new TypeRef<BodyResult<TaskProperties>>() {
+        });
     }
 
     public BodyResult<List<TaskProperties>> getAllTasks(Integer projectId, Integer statusId) {
@@ -96,7 +97,8 @@ public class TaskApiSteps extends BaseApiSteps{
                 .build();
 
         Response response = postRequest(API_USERNAME, API_TOKEN, bodyArgs);
-        return response.as(new TypeRef<BodyResult<List<TaskProperties>>>() {});
+        return response.as(new TypeRef<BodyResult<List<TaskProperties>>>() {
+        });
     }
 
     public boolean deleteTask(Integer taskId) {
@@ -121,7 +123,7 @@ public class TaskApiSteps extends BaseApiSteps{
         return (boolean) response.as(BodyResult.class).getResult();
     }
 
-    public boolean moveTaskPosition(Integer projectId, Integer taskId, Integer columnId, Integer position, Integer swimLaneId ) {
+    public boolean moveTaskPosition(Integer projectId, Integer taskId, Integer columnId, Integer position, Integer swimLaneId) {
         RequestMoveTask args = RequestMoveTask.builder()
                 .project_id(projectId)
                 .task_id(taskId)

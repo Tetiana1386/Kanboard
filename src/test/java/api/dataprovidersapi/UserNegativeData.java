@@ -3,8 +3,8 @@ package api.dataprovidersapi;
 import org.testng.annotations.DataProvider;
 
 public class UserNegativeData {
-    @DataProvider(name="userNegativeData")
-    public static Object [][] userCredentialsDataProvider(){
+    @DataProvider(name = "userNegativeData")
+    public static Object[][] userCredentialsDataProvider() {
         return new Object[][]{
                 {"", "admin"},
                 {"admin", "1315"},

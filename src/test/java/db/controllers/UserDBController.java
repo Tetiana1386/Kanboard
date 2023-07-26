@@ -1,9 +1,11 @@
 package db.controllers;
 
 import db.models.UserDB;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
 import static utils.EnvProperties.*;
 
 public class UserDBController {
@@ -38,7 +40,7 @@ public class UserDBController {
                 user = new UserDB(resultSet.getInt("id"),
                         resultSet.getString("username"),
                         resultSet.getString("password"),
-                        resultSet.getString("role") );
+                        resultSet.getString("role"));
             }
         } catch (SQLException ex) {
             throw new RuntimeException(EXCEPTION_MSG);
@@ -58,7 +60,7 @@ public class UserDBController {
                 user = new UserDB(resultSet.getInt("id"),
                         resultSet.getString("username"),
                         resultSet.getString("password"),
-                        resultSet.getString("role") );
+                        resultSet.getString("role"));
             }
         } catch (SQLException ex) {
             throw new RuntimeException(EXCEPTION_MSG);
@@ -77,7 +79,7 @@ public class UserDBController {
                 UserDB user = new UserDB(resultSet.getInt("id"),
                         resultSet.getString("username"),
                         resultSet.getString("password"),
-                        resultSet.getString("role") );
+                        resultSet.getString("role"));
                 users.add(user);
             }
         } catch (SQLException ex) {

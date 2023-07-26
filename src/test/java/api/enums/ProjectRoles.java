@@ -6,11 +6,11 @@ public enum ProjectRoles {
     VIEWER("project-viewer");
     private String roleProject;
 
-    ProjectRoles(String roleProject){
-        this.roleProject=roleProject;
+    ProjectRoles(String roleProject) {
+        this.roleProject = roleProject;
     }
 
-    public String getRoleProject(){
+    public String getRoleProject() {
         return roleProject;
     }
 }

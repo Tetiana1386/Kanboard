@@ -3,6 +3,7 @@ package ui.pages.project;
 import io.qameta.allure.Step;
 import ui.elements.project.ProjectFormElements;
 import ui.pages.DashboardPage;
+
 import static com.codeborne.selenide.Condition.visible;
 
 public class ProjectFormPage extends ProjectFormElements {

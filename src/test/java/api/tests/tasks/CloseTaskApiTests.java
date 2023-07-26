@@ -25,6 +25,7 @@ public class CloseTaskApiTests {
         projectId = projectApiSteps.createNewProject(NAME_PROJECT);
         taskId = taskApiSteps.createNewTaskWithRequiredParameters(TITLE_TASK, Integer.valueOf(projectId));
     }
+
     @Test
     public void closeTasksApiTest() {
         isClosed = taskApiSteps.closeTask(Integer.valueOf(taskId));

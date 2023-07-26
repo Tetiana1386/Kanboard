@@ -29,21 +29,21 @@ public class AddProjectUserApiTests {
 
     @Test
     @Description("Checking positive case of adding a project user")
-    public void addProjectUserPositiveApiTest(){
+    public void addProjectUserPositiveApiTest() {
         boolean result = projectApiSteps.addProjectUser(projectId, userId, MEMBER.getRoleProject());
         Assert.assertTrue(result, "Project user isn't added");
     }
 
     @Test
     @Description("checking negative case of adding a project user")
-    public void addProjectUserNegativeApiTest(){
-        boolean result = projectApiSteps.addProjectUser(projectId+projectId, userId, MEMBER.getRoleProject());
+    public void addProjectUserNegativeApiTest() {
+        boolean result = projectApiSteps.addProjectUser(projectId + projectId, userId, MEMBER.getRoleProject());
         Assert.assertFalse(result, "Project user is added");
     }
 
     @AfterMethod(alwaysRun = true)
     @Description("Cleanup test data")
-    public void removeDataAfterTest(){
+    public void removeDataAfterTest() {
         projectApiSteps.deleteProject(Integer.valueOf(projectId));
         userApiSteps.deleteUser(Integer.valueOf(userId));
     }

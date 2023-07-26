@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ui.tests.BaseUiTest;
+
 import static api.enums.UserRoles.ADMIN;
 import static com.codeborne.selenide.Condition.*;
 import static utils.MyCustomFaker.getRandomNumber;
@@ -50,7 +51,7 @@ public class TaskUiTests extends BaseUiTest {
         taskPage
                 .openTaskPage(Integer.valueOf(taskId))
                 .loginOnTaskPage(USERNAME, PASSWORD)
-                .clickRemoveTaskItem( )
+                .clickRemoveTaskItem()
                 .assertModalWindowActionsTaskIsOpen()
                 .clickYesButton();
         boardPage

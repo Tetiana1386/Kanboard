@@ -1,6 +1,7 @@
 package ui.pages;
 
 import com.codeborne.selenide.SelenideElement;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class AbstractPage {
         }
         return ints;
     }
+
     public void selectElementFromList(List<SelenideElement> selectElement, String searchText) {
         int index = findListIndexesByItem(selectElement, searchText).get(0);
         selectElement.get(index).click();

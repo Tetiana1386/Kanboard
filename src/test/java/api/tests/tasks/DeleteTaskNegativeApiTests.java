@@ -25,6 +25,7 @@ public class DeleteTaskNegativeApiTests {
         projectId = projectApiSteps.createNewProject(NAME_PROJECT);
         taskId = taskApiSteps.createNewTaskWithRequiredParameters(TITLE_TASK, Integer.valueOf(projectId));
     }
+
     @Test
     public void deleteTasksApiTest() {
         isDeleted = taskApiSteps.deleteTask(Integer.valueOf(taskId + taskId));

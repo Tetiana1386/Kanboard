@@ -2,7 +2,7 @@
 ---
 <div align="center">
   <a href="https://github.com/Tetiana1386/Kanboard">
-    <img src="src/images/image_1.png" alt="Kanboard" width="" height="">
+    <img src="https://github.com/Tetiana1386/Kanboard/blob/main/src/images/icons/image_1.png" alt="Kanboard" width="" height="">
   </a>
 </div>
 
@@ -19,7 +19,7 @@
 <code><img src="src/images/icons/Lombok.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/mariadb.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/docker.png" alt="html5" height='50px' width='70'/></code>
-<code><img src="src/images/icons/jenkins.png" alt="html5" height='50px' width='75'/></code>
+<code><img src="src/images/icons/jenkins.png" alt="html5" height='46px' width='75'/></code>
 
 ## Getting Started
 ---
@@ -61,10 +61,10 @@ Run your app with Compose:
 ## My Allure reports:
 ---
 
-[//]: # (- [x] [Allure report UI_Tests]&#40;https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_UI_TESTS.png&#41;)
+- [x] [Allure report UI_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_UI_TESTS.png)
 
-[//]: # ()
-[//]: # (- [x] [Allure report API_Tests]&#40;https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_API_TESTS.png&#41;)
 
-[//]: # ()
-[//]: # (- [x] [Allure report DB_Tests]&#40;https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_DB_TESTS.png&#41;)
+- [x] [Allure report API_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_API_TESTS.png)
+
+
+- [x] [Allure report DB_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_DB_TESTS.png)

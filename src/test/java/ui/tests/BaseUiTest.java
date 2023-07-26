@@ -38,15 +38,15 @@ public class BaseUiTest {
     public void setUp() {
 
         String browser = System.getProperty("browser");
-        //String headless = System.getProperty("headless");
-        //Configuration.browser = browser;
-        Configuration.browser = "chrome";
+        String headless = System.getProperty("headless");
+        Configuration.browser = browser;
+        //Configuration.browser = "chrome";
         Configuration.browserSize = "1440x900";
         Configuration.baseUrl = BASE_URL;
 
-//        if(headless.equals("true")){
-//            Configuration.headless = true;
-//        }
+        if(headless.equals("true")){
+            Configuration.headless = true;
+        }
 
         userApiSteps = new UserApiSteps();
         projectApiSteps = new ProjectApiSteps();

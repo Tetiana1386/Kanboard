@@ -17,8 +17,8 @@
 <code><img src="src/images/icons/Allure.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/Lombok.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/mariadb.png" alt="html5" height='50px' width='70'/></code>
-<code><img src="src/images/icons/docker.png" alt="html5" height='50px' width='70'/></code>
-<code><img src="src/images/icons/jenkins.png" alt="html5" height='46px' width='75'/></code>
+<code><img src="src/images/icons/docker.png" alt="html5" height='48px' width='70'/></code>
+<code><img src="src/images/icons/jenkins.png" alt="html5" height='47px' width='72'/></code>
 
 ## Getting Started
 ---
@@ -36,26 +36,48 @@ Run your app with Compose:
 ---
 
 
-- [x] `mvn clean test -Papi_regression` - to run all API tests;
+- [x] To run all API tests:
+  ```sh
+  $ mvn clean test -Papi_regression
+  ```
 
 
-- [x] `mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=false` - to run all Ui tests in the Chrome browser;
+- [x] To run all Ui tests in the Chrome browser:
+  ```sh
+  $ mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=false
+  ```
 
 
-- [x] `mvn clean test -Pui_regression -Dbrowser=firefox -Dheadless=false` - to run all Ui tests in the Firefox browser;
+- [x] To run all Ui tests in the Firefox browser:
+  ```sh
+  $ mvn clean test -Pui_regression -Dbrowser=firefox -Dheadless=false
+  ```
 
 
-- [x] `mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=true` - to run all Ui tests in the headless mode Chrome browser;
+- [x] To run all Ui tests in the headless mode Chrome browser:
+  ```sh
+  $ mvn clean test -Pui_regression -Dbrowser=chrome -Dheadless=true
+  ```
+
+
+- [x] To run all DB tests:
+  ```sh
+  $ mvn clean test -Pdb_regression
+  ```
 
 
 ## Commands for receiving Allure report:
 ---
 
 
-- [x] `allure generate target/allure-results`;
+  ```sh
+  $ allure generate target/allure-results
+  ```
 
 
-- [x] `allure serve target/allure-results`.
+  ```sh
+  $ allure serve target/allure-results
+  ```
 
 ## My Allure reports:
 ---

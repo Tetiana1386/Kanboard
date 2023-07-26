@@ -67,3 +67,6 @@ Run your app with Compose:
 
 
 - [x] [Allure report DB_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_DB_TESTS.png)
+
+
+- [x] [Jenkins_API_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/Jenkins_API_TESTS.png)

@@ -10,7 +10,6 @@
 ---
 
 <code><img src="src/images/icons/java.png" alt="html5" height='50px' width='70'/></code>
-
 <code><img src="src/images/icons/maven.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/testng.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/selenide.png" alt="html5" height='50px' width='70'/></code>

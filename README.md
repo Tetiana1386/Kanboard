@@ -18,7 +18,7 @@
 <code><img src="src/images/icons/Lombok.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/mariadb.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/docker.png" alt="html5" height='50px' width='70'/></code>
-<code><img src="src/images/icons/jenkins.png" alt="html5" height='50px' width='75'/></code>
+<code><img src="src/images/icons/jenkins.png" alt="html5" height='46px' width='75'/></code>
 
 ## Getting Started
 ---

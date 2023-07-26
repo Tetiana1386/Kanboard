@@ -10,6 +10,7 @@
 ---
 
 <code><img src="src/images/icons/java.png" alt="html5" height='50px' width='70'/></code>
+
 <code><img src="src/images/icons/maven.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/testng.png" alt="html5" height='50px' width='70'/></code>
 <code><img src="src/images/icons/selenide.png" alt="html5" height='50px' width='70'/></code>
@@ -29,8 +30,8 @@ Run your app with Compose:
   ```sh
   $ docker compose up
   ```
-2. Enter http://localhost:80/ in a browser to see the application running.
-3. If this doesn’t resolve, you can also try http://127.0.0.1:80.
+2. Enter http://localhost:8080/ in a browser to see the application running.
+3. If this doesn’t resolve, you can also try http://127.0.0.1:8080.
 
 ## Commands for running tests:
 ---
@@ -60,8 +61,10 @@ Run your app with Compose:
 ## My Allure reports:
 ---
 
-- [x] [Allure report UI_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_UI_TESTS.png)
+[//]: # (- [x] [Allure report UI_Tests]&#40;https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_UI_TESTS.png&#41;)
 
-- [x] [Allure report API_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_API_TESTS.png)
+[//]: # ()
+[//]: # (- [x] [Allure report API_Tests]&#40;https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_API_TESTS.png&#41;)
 
-- [x] [Allure report DB_Tests](https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_DB_TESTS.png)
+[//]: # ()
+[//]: # (- [x] [Allure report DB_Tests]&#40;https://github.com/Tetiana1386/Kanboard/blob/main/src/images/screenshots/AR_DB_TESTS.png&#41;)
